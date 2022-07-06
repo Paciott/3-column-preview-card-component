@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap");
+
+:root {
+  --light-grey: hsl(0, 0%, 95%);
+  --transparent-white: hsla(0, 0%, 100%, 0.75);
+  --very-dark-cyan: hsl(179, 100%, 13%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --bright-orange: hsl(31, 77%, 52%);
+}
+
+.row {
+  margin: 10rem auto;
+}
+
+.container {
+  max-width: 60rem;
+  margin: auto;
+}
+
+.col-12 {
+  padding: 0;
+}
+
+body {
+  background-color: var(--light-grey);
+}
+
+h2 {
+  font-family: "Big Shoulders Display", sans-serif;
+  font-weight: 700;
+  color: var(--transparent-white);
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+p {
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  color: var(--transparent-white);
+  line-height: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.card1,
+.card2,
+.card3 {
+  max-width: 25rem;
+  min-height: 30rem;
+  padding: 3rem;
+  margin: auto;
+}
+
+.card1 {
+  background-color: var(--bright-orange);
+  border-top-left-radius: 0.7rem;
+  border-top-right-radius: 0.7rem;
+}
+
+.card2 {
+  background-color: var(--dark-cyan);
+}
+
+.card3 {
+  background-color: var(--very-dark-cyan);
+  border-bottom-left-radius: 0.7rem;
+  border-bottom-right-radius: 0.7rem;
+}
+
+.btn {
+  font-family: "Lexend Deca", sans-serif;
+  padding: 0.6rem 2rem;
+  margin-top: 1.5rem;
+  border-radius: 2rem;
+  background-color: var(--light-grey);
+  border: 2px solid var(--light-grey);
+}
+
+#btn1 {
+  color: var(--bright-orange);
+}
+#btn1:hover {
+  background-color: var(--bright-orange);
+  color: var(--light-grey);
+  border-color: var(--light-grey);
+}
+
+#btn2 {
+  color: var(--dark-cyan);
+}
+#btn2:hover {
+  background-color: var(--dark-cyan);
+  color: var(--light-grey);
+  border-color: var(--light-grey);
+}
+
+#btn3 {
+  color: var(--very-dark-cyan);
+}
+#btn3:hover {
+  background-color: var(--very-dark-cyan);
+  color: var(--light-grey);
+  border-color: var(--light-grey);
+}
+
+@media (min-width: 992px) {
+  .card1 {
+    border-top-left-radius: 0.7rem;
+    border-bottom-left-radius: 0.7rem;
+    border-top-right-radius: 0;
+  }
+
+  .card3 {
+    border-top-right-radius: 0.7rem;
+    border-bottom-right-radius: 0.7rem;
+    border-bottom-left-radius: 0;
+  }
+}
